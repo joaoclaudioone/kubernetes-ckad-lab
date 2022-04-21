@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test-123
+  name: test-123
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-123
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: test-123
+    spec:
+      containers:
+      - image: test
+        name: test
+        resources: {}
+status: {}
