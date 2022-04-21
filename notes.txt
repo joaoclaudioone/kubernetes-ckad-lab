@@ -14,3 +14,6 @@ Then edit the file to make the necessary changes, delete and re-create the pod.
 
 Use the kubectl edit pod <pod-name> command to edit pod properties.
 ==================================
+
+create definition files
+kubectl create deployment test-123 --image test --dry-run -o yaml > test.yaml
